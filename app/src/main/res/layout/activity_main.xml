@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activities.MainActivity">
+
+    <ImageView
+        android:id="@+id/ivMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:contentDescription="@string/logoDescription"
+        app:srcCompat="@mipmap/yadayada" />
+
+    <TextView
+        android:id="@+id/tvHello"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:layout_marginTop="50dp" />
+
+    <Button
+        android:id="@+id/btnCreateRide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:onClick="createRide"
+        android:text="@string/createRide" />
+
+    <Button
+        android:id="@+id/btnSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="search"
+        android:text="@string/search" />
+
+    <Button
+        android:id="@+id/btnTrips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="trips"
+        android:text="@string/trips" />
+
+    <Button
+        android:id="@+id/btnProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="profile"
+        android:text="@string/profile" />
+</LinearLayout>
